@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "backend"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1iifzej1h9qzt"
+s3_prefix = "backend"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=908988413876.dkr.ecr.us-east-1.amazonaws.com/backendb43fdd98/helloworldfunction19d43fc4repo"]
